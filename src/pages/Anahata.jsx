@@ -168,39 +168,32 @@ export default function Anahata() {
       <WhatsAppButton message="Hi, I'm interested in Anahata project. Can you please provide more details?" />
 
       {/* Hero Video Section */}
-      <section className="relative h-[80vh] md:h-[80vh] overflow-hidden">
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <section className="relative h-[56.25vw] md:h-[80vh] bg-white overflow-hidden">
+        <div className="absolute inset-0 w-full h-full overflow-hidden hero-video-container">
           <iframe
             ref={iframeRef}
-            className="absolute"
             id="anahata-yt-player"
             src="https://www.youtube.com/embed/_UE-muzzbz4?autoplay=1&mute=1&loop=1&playlist=_UE-muzzbz4&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1&origin=https://www.ishtikahomes.com"
             title="Anahata Project"
             allow="autoplay; encrypted-media"
             style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: 'max(100vw, 177.77vh)',
-              height: 'max(100vh, 56.25vw)',
               pointerEvents: 'none',
               border: 'none',
             }}
           />
         </div>
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-x-0 bg-black/50 hero-video-overlay" />
 
-        {/* Mute/Unmute Button - Top Left */}
+        {/* Mute/Unmute Button - Top Left, visible below navbar on mobile */}
         <button
           onClick={toggleMute}
-          className="absolute top-6 left-6 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
+          className="absolute top-2 left-4 md:top-6 md:left-6 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
           aria-label={isMuted ? "Unmute video" : "Mute video"}
         >
           {isMuted ? <VolumeX className="w-4 h-4 md:w-5 md:h-5" /> : <Volume2 className="w-4 h-4 md:w-5 md:h-5" />}
         </button>
-        <div className="relative h-full flex flex-col items-center justify-between text-center px-4 py-12 md:py-0 md:px-6 md:justify-center">
-          <div className="flex-shrink-0 mt-8 md:mt-0">
+        <div className="relative h-full flex flex-col items-center justify-center text-center px-4 py-4 md:py-0 md:px-6">
+          <div className="flex-shrink-0">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -257,13 +250,13 @@ export default function Anahata() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="mb-4 md:mb-6"
+            className="mb-2 md:mb-6 mt-2 md:mt-0"
           >
             <Link to={createPageUrl("AnahataBookSiteVisit")}>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 style={{ backgroundColor: '#FF8C00', color: 'white' }}
-                className="hover:opacity-90 px-8 py-6 text-base"
+                className="hover:opacity-90 px-6 py-4 md:px-8 md:py-6 text-sm md:text-base"
               >
                 Book a Site Visit
                 <ArrowRight className="w-5 h-5 ml-2" />

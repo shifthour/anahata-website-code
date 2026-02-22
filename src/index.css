@@ -86,3 +86,42 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hero video - Mobile: fit (no crop, white bg), Desktop: cover (fill) */
+.hero-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video-container iframe {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+.hero-video-overlay {
+  top: 0;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-video-container iframe {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: max(100vw, 177.77vh);
+    height: max(100vh, 56.25vw);
+  }
+
+  .hero-video-overlay {
+    top: 0;
+    transform: none;
+    height: 100%;
+  }
+}
+
