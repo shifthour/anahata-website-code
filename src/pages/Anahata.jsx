@@ -191,13 +191,13 @@ export default function Anahata() {
         </div>
         <div className="absolute inset-0 bg-black/50" />
 
-        {/* Mute/Unmute Button */}
+        {/* Mute/Unmute Button - Top Left */}
         <button
           onClick={toggleMute}
-          className="absolute bottom-6 right-6 z-20 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
+          className="absolute top-6 left-6 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
           aria-label={isMuted ? "Unmute video" : "Mute video"}
         >
-          {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+          {isMuted ? <VolumeX className="w-4 h-4 md:w-5 md:h-5" /> : <Volume2 className="w-4 h-4 md:w-5 md:h-5" />}
         </button>
         <div className="relative h-full flex flex-col items-center justify-between text-center px-4 py-12 md:py-0 md:px-6 md:justify-center">
           <div className="flex-shrink-0 mt-8 md:mt-0">
