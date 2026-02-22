@@ -55,7 +55,7 @@ export default function Blog() {
                 <Link to={`${createPageUrl('BlogPost')}?id=${post.id}`}>
                   <div className="relative aspect-[16/10] overflow-hidden cursor-pointer bg-gray-200">
                     <img
-                      src={post.image || 'https://www.ishtikahomes.com/assets/img/all-images/blog-img1.png'}
+                      src={post.image || '/assets/img/all-images/blog-img1.png'}
                       alt={post.featuredImageAlt || post.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />

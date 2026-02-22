@@ -93,21 +93,21 @@ const highlights = [
 ];
 
 const floorPlans = [
-  { name: "Master Plan", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/master-plan.png", desc: "The complete project layout includes all five towers, open spaces, and amenities" },
-  { name: "Block A", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/block-a.png", desc: "Floor plans featuring premium 2BHK and 3BHK apartment layouts" },
-  { name: "Block B", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/block-b.png", desc: "Thoughtfully designed apartments with modern floor plans and function" },
-  { name: "Block C", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/block-c.png", desc: "Generous living spaces and optimal floor plans for your dream home" },
-  { name: "Block D", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/block-d.png", desc: "Elegant design made for modern living in Bangalore" },
-  { name: "Block E", image: "https://www.ishtikahomes.com/anahata/images/floor-plans/block-e.png", desc: "Private apartments that offer space and comfort in perfect balance" },
+  { name: "Master Plan", image: "/anahata/images/floor-plans/master-plan.png", desc: "The complete project layout includes all five towers, open spaces, and amenities" },
+  { name: "Block A", image: "/anahata/images/floor-plans/block-a.png", desc: "Floor plans featuring premium 2BHK and 3BHK apartment layouts" },
+  { name: "Block B", image: "/anahata/images/floor-plans/block-b.png", desc: "Thoughtfully designed apartments with modern floor plans and function" },
+  { name: "Block C", image: "/anahata/images/floor-plans/block-c.png", desc: "Generous living spaces and optimal floor plans for your dream home" },
+  { name: "Block D", image: "/anahata/images/floor-plans/block-d.png", desc: "Elegant design made for modern living in Bangalore" },
+  { name: "Block E", image: "/anahata/images/floor-plans/block-e.png", desc: "Private apartments that offer space and comfort in perfect balance" },
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/amphitheater-night.png", title: "Amphitheater & Evening Ambiance" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/sports-facilities-day.png", title: "Sports Facilities & Recreation" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/landscaped-pathway.png", title: "Landscaped Walkways & Gardens" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/aerial-complex-view.png", title: "Aerial View of Complete Complex" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/tennis-courts.png", title: "Tennis & Badminton Courts" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/kids-play-area.png", title: "Kids Play Area" },
+  { url: "/anahata/images/gallery/amphitheater-night.png", title: "Amphitheater & Evening Ambiance" },
+  { url: "/anahata/images/gallery/sports-facilities-day.png", title: "Sports Facilities & Recreation" },
+  { url: "/anahata/images/gallery/landscaped-pathway.png", title: "Landscaped Walkways & Gardens" },
+  { url: "/anahata/images/gallery/aerial-complex-view.png", title: "Aerial View of Complete Complex" },
+  { url: "/anahata/images/gallery/tennis-courts.png", title: "Tennis & Badminton Courts" },
+  { url: "/anahata/images/gallery/kids-play-area.png", title: "Kids Play Area" },
 ];
 
 export default function Anahata() {
@@ -604,7 +604,7 @@ export default function Anahata() {
             {/* Background Image */}
             <EditableBackgroundImage
               imageKey="anahata-cta-background"
-              src="https://www.ishtikahomes.com/assets/img/aerial-view-bg.jpg"
+              src="/assets/img/aerial-view-bg.jpg"
               className="absolute inset-0 bg-cover bg-center"
             >
               <div className="absolute inset-0 bg-black/60" />

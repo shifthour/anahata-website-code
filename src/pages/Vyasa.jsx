@@ -32,11 +32,11 @@ const amenities = [
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vyasa-img1.png", title: "Vyasa Exterior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vyasa-img2.png", title: "Vyasa View" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vyasa-img3.png", title: "Vyasa Amenities" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vyasa-img4.png", title: "Vyasa Interior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vyasa-img5.png", title: "Vyasa Landscape" },
+  { url: "/assets/img/all-images/vyasa-img1.png", title: "Vyasa Exterior" },
+  { url: "/assets/img/all-images/vyasa-img2.png", title: "Vyasa View" },
+  { url: "/assets/img/all-images/vyasa-img3.png", title: "Vyasa Amenities" },
+  { url: "/assets/img/all-images/vyasa-img4.png", title: "Vyasa Interior" },
+  { url: "/assets/img/all-images/vyasa-img5.png", title: "Vyasa Landscape" },
 ];
 
 const specifications = [
@@ -69,7 +69,7 @@ export default function Vyasa() {
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://www.ishtikahomes.com/assets/img/all-images/vyasa-img1.png"
+            src="/assets/img/all-images/vyasa-img1.png"
             alt="Vyasa Project"
             className="w-full h-full object-cover"
           />
@@ -141,7 +141,7 @@ export default function Vyasa() {
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src="https://www.ishtikahomes.com/assets/img/all-images/vyasa-img2.png" alt="Vyasa Project" className="rounded-2xl shadow-xl w-full" />
+            <img src="/assets/img/all-images/vyasa-img2.png" alt="Vyasa Project" className="rounded-2xl shadow-xl w-full" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">About Vyasa</h2>

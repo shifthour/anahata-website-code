@@ -19,7 +19,7 @@ export default function HomeCTASection() {
           {/* Background Image */}
           <EditableBackgroundImage
             imageKey="home-cta-background"
-            src="https://www.ishtikahomes.com/assets/img/aerial-view-bg.jpg"
+            src="/assets/img/aerial-view-bg.jpg"
             className="absolute inset-0 bg-cover bg-center"
           >
             <div className="absolute inset-0 bg-black/60" />

@@ -10,7 +10,7 @@ const testimonials = [
     project: "Anahata",
     location: "Anahata, Whitefield",
     badge: "Ongoing Project",
-    image: "https://www.ishtikahomes.com/assets/img/all-images/client1.jpg",
+    image: "/assets/img/all-images/client1.jpg",
   },
   {
     quote: "Living in Vashishta, JP Nagar has been a dream come true. The location is perfect with schools, hospitals, and shopping centers nearby. What impressed us most was the transparent pricing and no hidden costs. Ishtika Homes truly cares about their customers and it shows in every interaction.",
@@ -18,7 +18,7 @@ const testimonials = [
     project: "Vashishta",
     location: "Vashishta, JP Nagar",
     badge: null,
-    image: "https://www.ishtikahomes.com/assets/img/all-images/client3.jpg",
+    image: "/assets/img/all-images/client3.jpg",
   },
   {
     quote: "Our apartment in White Pearl is not just a house, it's a home. The elegant design, sustainable construction practices, and the beautiful landscaping make it a perfect blend of luxury and nature. We appreciate Ishtika Homes' commitment to timely delivery and quality construction.",
@@ -26,7 +26,7 @@ const testimonials = [
     project: "White Pearl",
     location: "White Pearl, Bellary",
     badge: null,
-    image: "https://www.ishtikahomes.com/assets/img/all-images/client4.jpg",
+    image: "/assets/img/all-images/client4.jpg",
   },
   {
     quote: "After visiting multiple projects, we chose Advaitha for its spacious layout and modern amenities. The vaastu-compliant design was a major factor for us. The customer service team at Ishtika Homes has been excellent, always available to address our queries even after possession!",
@@ -34,7 +34,7 @@ const testimonials = [
     project: "Advaitha",
     location: "Advaitha, Bangalore",
     badge: null,
-    image: "https://www.ishtikahomes.com/assets/img/all-images/client5.jpg",
+    image: "/assets/img/all-images/client5.jpg",
   },
   {
     quote: "Investing in Anahata was one of our best financial decisions. We booked our home here after thorough research, and the gated community design offers excellent security and lifestyle amenities. The construction progress has been remarkable and Ishtika Homes keeps us updated regularly. Highly recommended for families looking for their dream home!",
@@ -42,7 +42,7 @@ const testimonials = [
     project: "Anahata",
     location: "Anahata, Whitefield",
     badge: "Ongoing Project",
-    image: "https://www.ishtikahomes.com/assets/img/all-images/client6.jpg",
+    image: "/assets/img/all-images/client6.jpg",
   },
 ];
 

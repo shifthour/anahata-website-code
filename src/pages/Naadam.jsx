@@ -30,12 +30,12 @@ const amenities = [
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img1.png", title: "Naadam Exterior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img2.png", title: "Naadam View" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img3.png", title: "Naadam Amenities" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img4.png", title: "Naadam Interior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img5.png", title: "Naadam Landscape" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/naadam-img6.png", title: "Naadam Facilities" },
+  { url: "/assets/img/all-images/naadam-img1.png", title: "Naadam Exterior" },
+  { url: "/assets/img/all-images/naadam-img2.png", title: "Naadam View" },
+  { url: "/assets/img/all-images/naadam-img3.png", title: "Naadam Amenities" },
+  { url: "/assets/img/all-images/naadam-img4.png", title: "Naadam Interior" },
+  { url: "/assets/img/all-images/naadam-img5.png", title: "Naadam Landscape" },
+  { url: "/assets/img/all-images/naadam-img6.png", title: "Naadam Facilities" },
 ];
 
 const specifications = [
@@ -68,7 +68,7 @@ export default function Naadam() {
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://www.ishtikahomes.com/assets/img/all-images/naadam-img1.png"
+            src="/assets/img/all-images/naadam-img1.png"
             alt="Naadam Project"
             className="w-full h-full object-cover"
           />
@@ -140,7 +140,7 @@ export default function Naadam() {
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src="https://www.ishtikahomes.com/assets/img/all-images/naadam-img2.png" alt="Naadam Project" className="rounded-2xl shadow-xl w-full" />
+            <img src="/assets/img/all-images/naadam-img2.png" alt="Naadam Project" className="rounded-2xl shadow-xl w-full" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">About Naadam</h2>

@@ -87,7 +87,7 @@ export default function BlogPost() {
                   </div>
 
                   <img
-                    src={post.image || 'https://www.ishtikahomes.com/assets/img/all-images/blog-img1.png'}
+                    src={post.image || '/assets/img/all-images/blog-img1.png'}
                     alt={post.featuredImageAlt || post.title}
                     className="w-full rounded-2xl mb-12 shadow-md"
                   />
@@ -130,7 +130,7 @@ export default function BlogPost() {
                             defaultDescription="Connect with our experts to find the perfect property that matches your aspirations."
                             defaultButtonText="Enquire Now"
                             defaultButtonLink="Contact"
-                            defaultImage="https://www.ishtikahomes.com/assets/img/all-images/about-img1.png"
+                            defaultImage="/assets/img/all-images/about-img1.png"
                           />
                         );
                       }
@@ -144,7 +144,7 @@ export default function BlogPost() {
                             defaultDescription="Connect with our experts to find the perfect property that matches your aspirations."
                             defaultButtonText="Enquire Now"
                             defaultButtonLink="Contact"
-                            defaultImage="https://www.ishtikahomes.com/assets/img/all-images/about-img1.png"
+                            defaultImage="/assets/img/all-images/about-img1.png"
                           />
                         );
                       }

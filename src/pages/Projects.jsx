@@ -157,7 +157,7 @@ export default function Projects() {
                     <div className="relative h-48 md:h-56 overflow-hidden flex-shrink-0">
                       <EditableImage
                         imageKey={`project-${project.name.toLowerCase().replace(/\s+/g, '')}`}
-                        src={project.image || "https://www.ishtikahomes.com/assets/img/aerial-view-bg.jpg"}
+                        src={project.image || "/assets/img/aerial-view-bg.jpg"}
                         alt={project.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />

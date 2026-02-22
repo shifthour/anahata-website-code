@@ -35,12 +35,12 @@ const amenities = [
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img1.png", title: "Vashishta Exterior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img2.png", title: "Vashishta View" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img3.png", title: "Vashishta Amenities" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img4.png", title: "Vashishta Interior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img5.png", title: "Vashishta Landscape" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/vashishta-img6.png", title: "Vashishta Facilities" },
+  { url: "/assets/img/all-images/vashishta-img1.png", title: "Vashishta Exterior" },
+  { url: "/assets/img/all-images/vashishta-img2.png", title: "Vashishta View" },
+  { url: "/assets/img/all-images/vashishta-img3.png", title: "Vashishta Amenities" },
+  { url: "/assets/img/all-images/vashishta-img4.png", title: "Vashishta Interior" },
+  { url: "/assets/img/all-images/vashishta-img5.png", title: "Vashishta Landscape" },
+  { url: "/assets/img/all-images/vashishta-img6.png", title: "Vashishta Facilities" },
 ];
 
 const specifications = [
@@ -73,7 +73,7 @@ export default function Vashishta() {
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://www.ishtikahomes.com/assets/img/all-images/vashishta-img1.png"
+            src="/assets/img/all-images/vashishta-img1.png"
             alt="Vashishta Project"
             className="w-full h-full object-cover"
           />
@@ -145,7 +145,7 @@ export default function Vashishta() {
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src="https://www.ishtikahomes.com/assets/img/all-images/vashishta-img2.png" alt="Vashishta Project" className="rounded-2xl shadow-xl w-full" />
+            <img src="/assets/img/all-images/vashishta-img2.png" alt="Vashishta Project" className="rounded-2xl shadow-xl w-full" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">About Vashishta</h2>

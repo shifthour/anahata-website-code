@@ -31,12 +31,12 @@ const amenities = [
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img1.png", title: "Krishna Exterior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img2.png", title: "Krishna View" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img3.png", title: "Krishna Amenities" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img4.png", title: "Krishna Interior" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img5.png", title: "Krishna Landscape" },
-  { url: "https://www.ishtikahomes.com/assets/img/all-images/krishna-img6.png", title: "Krishna Facilities" },
+  { url: "/assets/img/all-images/krishna-img1.png", title: "Krishna Exterior" },
+  { url: "/assets/img/all-images/krishna-img2.png", title: "Krishna View" },
+  { url: "/assets/img/all-images/krishna-img3.png", title: "Krishna Amenities" },
+  { url: "/assets/img/all-images/krishna-img4.png", title: "Krishna Interior" },
+  { url: "/assets/img/all-images/krishna-img5.png", title: "Krishna Landscape" },
+  { url: "/assets/img/all-images/krishna-img6.png", title: "Krishna Facilities" },
 ];
 
 const specifications = [
@@ -70,7 +70,7 @@ export default function Krishna() {
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://www.ishtikahomes.com/assets/img/all-images/krishna-img1.png"
+            src="/assets/img/all-images/krishna-img1.png"
             alt="Krishna Project"
             className="w-full h-full object-cover"
           />
@@ -142,7 +142,7 @@ export default function Krishna() {
       <section className="py-12 md:py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <img src="https://www.ishtikahomes.com/assets/img/all-images/krishna-img2.png" alt="Krishna Project" className="rounded-2xl shadow-xl w-full" />
+            <img src="/assets/img/all-images/krishna-img2.png" alt="Krishna Project" className="rounded-2xl shadow-xl w-full" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">About Krishna</h2>

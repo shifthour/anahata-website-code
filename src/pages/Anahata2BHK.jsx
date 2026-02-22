@@ -34,12 +34,12 @@ const highlights = [
 ];
 
 const galleryImages = [
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/amphitheater-night.png", title: "Amphitheater" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/sports-facilities-day.png", title: "Sports Facilities" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/landscaped-pathway.png", title: "Gardens" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/tennis-courts.png", title: "Courts" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/kids-play-area.png", title: "Play Area" },
-  { url: "https://www.ishtikahomes.com/anahata/images/gallery/outdoor-clubhouse.png", title: "Clubhouse" },
+  { url: "/anahata/images/gallery/amphitheater-night.png", title: "Amphitheater" },
+  { url: "/anahata/images/gallery/sports-facilities-day.png", title: "Sports Facilities" },
+  { url: "/anahata/images/gallery/landscaped-pathway.png", title: "Gardens" },
+  { url: "/anahata/images/gallery/tennis-courts.png", title: "Courts" },
+  { url: "/anahata/images/gallery/kids-play-area.png", title: "Play Area" },
+  { url: "/anahata/images/gallery/outdoor-clubhouse.png", title: "Clubhouse" },
 ];
 
 export default function Anahata2BHK() {
@@ -249,7 +249,7 @@ export default function Anahata2BHK() {
           >
             <EditableImage
               imageKey="anahata-2bhk-floor-plan"
-              src="https://www.ishtikahomes.com/anahata/images/floor-plans/block-a.png"
+              src="/anahata/images/floor-plans/block-a.png"
               alt="2BHK Floor Plan"
               className="w-full rounded-xl"
             />
@@ -448,7 +448,7 @@ export default function Anahata2BHK() {
           >
             <EditableBackgroundImage
               imageKey="anahata-2bhk-cta-background"
-              src="https://www.ishtikahomes.com/assets/img/aerial-view-bg.jpg"
+              src="/assets/img/aerial-view-bg.jpg"
               className="absolute inset-0 bg-cover bg-center"
             >
               <div className="absolute inset-0 bg-black/60" />

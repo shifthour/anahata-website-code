@@ -51,7 +51,7 @@ export default function Navbar() {
           {/* Logo with Tagline */}
           <a href="/" onClick={handleLogoClick} className="flex flex-col cursor-pointer">
             <img
-              src="https://www.ishtikahomes.com/assets/img/logo/logo1.png"
+              src="/assets/img/logo/logo1.png"
               alt="Ishtika Homes"
               className="h-16 w-auto"
             />
@@ -118,7 +118,7 @@ export default function Navbar() {
             <div className="p-4 flex justify-between items-center border-b border-gray-200">
               <a href="/" onClick={(e) => { handleLogoClick(e); setIsMobileMenuOpen(false); }} className="flex items-center cursor-pointer">
                 <img
-                  src="https://www.ishtikahomes.com/assets/img/logo/logo1.png"
+                  src="/assets/img/logo/logo1.png"
                   alt="Ishtika Homes"
                   className="h-12 w-auto"
                 />
