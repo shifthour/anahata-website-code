@@ -47,7 +47,8 @@ export async function submitLead({
         project_name,
         status_of_save,
         preferred_type,
-      }]);
+      }])
+      .select();
 
     if (error) {
       console.error('Supabase insert error:', error);

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Home, Calendar, Trees, Building2, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { MapPin, Home, Calendar, Trees, Building2, ArrowRight, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -114,7 +114,10 @@ export default function Anahata() {
   const [floorPlanIndex, setFloorPlanIndex] = useState(0);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+  const [isMuted, setIsMuted] = useState(true);
+  const playerRef = useRef(null);
+  const iframeRef = useRef(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     const interval = setInterval(() => {
@@ -122,6 +125,42 @@ export default function Anahata() {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const initPlayer = () => {
+      if (window.YT && window.YT.Player && iframeRef.current) {
+        playerRef.current = new window.YT.Player(iframeRef.current, {
+          events: {
+            onReady: (event) => {
+              event.target.mute();
+              event.target.playVideo();
+            },
+          },
+        });
+      }
+    };
+
+    if (!window.YT) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      window.onYouTubeIframeAPIReady = initPlayer;
+    } else {
+      initPlayer();
+    }
+  }, []);
+
+  const toggleMute = useCallback(() => {
+    if (playerRef.current) {
+      if (isMuted) {
+        playerRef.current.unMute();
+      } else {
+        playerRef.current.mute();
+      }
+      setIsMuted(!isMuted);
+    }
+  }, [isMuted]);
 
   return (
     <div className="bg-white min-h-screen pt-24">
@@ -132,8 +171,10 @@ export default function Anahata() {
       <section className="relative h-[80vh] md:h-[80vh] overflow-hidden">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <iframe
-            className="absolute pointer-events-none"
-            src="https://www.youtube.com/embed/_UE-muzzbz4?autoplay=1&mute=1&loop=1&playlist=_UE-muzzbz4&controls=0&showinfo=0&rel=0&modestbranding=1"
+            ref={iframeRef}
+            className="absolute"
+            id="anahata-yt-player"
+            src="https://www.youtube.com/embed/_UE-muzzbz4?autoplay=1&mute=1&loop=1&playlist=_UE-muzzbz4&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1&origin=https://www.ishtikahomes.com"
             title="Anahata Project"
             allow="autoplay; encrypted-media"
             style={{
@@ -149,6 +190,15 @@ export default function Anahata() {
           />
         </div>
         <div className="absolute inset-0 bg-black/50" />
+
+        {/* Mute/Unmute Button */}
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-6 right-6 z-20 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
+          aria-label={isMuted ? "Unmute video" : "Mute video"}
+        >
+          {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+        </button>
         <div className="relative h-full flex flex-col items-center justify-between text-center px-4 py-12 md:py-0 md:px-6 md:justify-center">
           <div className="flex-shrink-0 mt-8 md:mt-0">
             <motion.div
