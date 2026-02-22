@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!assets|anahata|images|Ishtika-Anahata-Brochure\\.pdf|robots\\.txt|sitemap\\.xml).*)", "destination": "/index.html" }
+  ]
+}
