@@ -17,6 +17,7 @@ const PAGE_ROUTES: Record<string, string> = {
     "Blog": "/blog",
     "BlogPost": "/BlogPost",
     "Contact": "/contact",
+    "PrivacyPolicy": "/privacy-policy",
 };
 
 export function createPageUrl(pageName: string) {

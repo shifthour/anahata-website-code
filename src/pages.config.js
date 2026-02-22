@@ -15,6 +15,7 @@ import Naadam from './pages/Naadam';
 import Projects from './pages/Projects';
 import Vashishta from './pages/Vashishta';
 import Vyasa from './pages/Vyasa';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 export const PAGES = {
@@ -35,6 +36,7 @@ export const PAGES = {
     "projects": Projects,
     "vashishta": Vashishta,
     "vyasa": Vyasa,
+    "privacy-policy": PrivacyPolicy,
 }
 
 export const pagesConfig = {

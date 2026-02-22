@@ -93,9 +93,9 @@ export default function Footer() {
             © 2024 Ishtika Homes. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-            <a href="#" className="text-white/40 hover:text-orange-400 text-sm transition-colors">
+            <Link to={createPageUrl("PrivacyPolicy")} className="text-white/40 hover:text-orange-400 text-sm transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-white/40 hover:text-orange-400 text-sm transition-colors">
               Terms of Service
             </a>
