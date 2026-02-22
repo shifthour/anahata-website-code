@@ -1,8 +1,6 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/home/HeroSection';
-import StatsSection from '@/components/home/StatsSection';
-
 import FeaturedProjects from '@/components/home/FeaturedProjects';
 import AboutSection from '@/components/home/AboutSection';
 import ProcessSection from '@/components/home/ProcessSection';
@@ -21,7 +19,6 @@ export default function Home() {
       <WhatsAppButton />
       <Navbar />
       <HeroSection />
-      <StatsSection />
       <AboutSection />
       <FeaturedProjects />
       <ProcessSection />

@@ -10,9 +10,9 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-10 md:py-16 px-4">
+    <section className="bg-gradient-to-b from-white to-gray-50 py-4 md:py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -22,10 +22,10 @@ export default function StatsSection() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-light text-orange-500 mb-2">
+              <div className="text-2xl md:text-5xl font-light text-orange-500 mb-1 md:mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600 text-sm tracking-wider uppercase font-medium">
+              <div className="text-gray-600 text-[10px] md:text-sm tracking-wider uppercase font-medium">
                 {stat.label}
               </div>
             </motion.div>
