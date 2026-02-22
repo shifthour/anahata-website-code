@@ -48,10 +48,11 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-[calc(56.25vw+100px)] md:min-h-screen bg-white overflow-hidden">
-      {/* Video Background - pt-[100px] on mobile to account for fixed navbar */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden hero-video-container pt-[100px] md:pt-0">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden hero-video-wrapper">
         <iframe
           ref={iframeRef}
+          className="hero-video-iframe"
           id="hero-yt-player"
           src="https://www.youtube.com/embed/_UE-muzzbz4?autoplay=1&mute=1&loop=1&playlist=_UE-muzzbz4&controls=0&showinfo=0&modestbranding=1&rel=0&enablejsapi=1&origin=https://www.ishtikahomes.com"
           title="Ishtika Homes Video"
@@ -61,8 +62,7 @@ export default function HeroSection() {
             border: 'none',
           }}
         />
-        {/* Dark overlay for better text readability - sized to video on mobile */}
-        <div className="absolute inset-x-0 bg-black/40 hero-video-overlay" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Mute/Unmute Button - Top Left, below navbar on mobile */}
