@@ -109,6 +109,12 @@
 }
 
 @media (min-width: 768px) {
+  .hero-video-container {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+  }
+
   .hero-video-container iframe {
     position: absolute !important;
     top: 50% !important;
