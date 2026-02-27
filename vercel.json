@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    { "source": "/projects/anahata", "destination": "/anahata", "permanent": true },
+    { "source": "/projects/krishna", "destination": "/krishna", "permanent": true },
+    { "source": "/projects/naadam", "destination": "/naadam", "permanent": true },
+    { "source": "/projects/vyasa", "destination": "/vyasa", "permanent": true },
+    { "source": "/projects/vashishta", "destination": "/vashishta", "permanent": true },
+    { "source": "/projects/agastya", "destination": "/agastya", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Building2, Trees, ArrowRight, ChevronLeft, ChevronRight, CheckCircle, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -61,6 +62,17 @@ export default function Naadam() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Naadam by Ishtika Homes | Premium 2BHK & 3BHK Apartments in Bangalore</title>
+        <meta name="description" content="Naadam by Ishtika Homes - Premium 2BHK & 3BHK Vaastu-compliant apartments in Bangalore. 1.42 Lakh sqft total area with modern amenities and contemporary design." />
+        <link rel="canonical" href="https://www.ishtikahomes.com/naadam" />
+        <meta property="og:title" content="Naadam by Ishtika Homes | Premium Apartments in Bangalore" />
+        <meta property="og:description" content="Premium 2BHK & 3BHK Vaastu-compliant apartments in Bangalore. 1.42 Lakh sqft total area with modern amenities." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/naadam" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Naadam by Ishtika Homes | Premium Apartments in Bangalore" />
+        <meta name="twitter:description" content="Premium 2BHK & 3BHK Vaastu-compliant apartments in Bangalore. 1.42 Lakh sqft total area with modern amenities." />
+      </Helmet>
       <Navbar />
       <WhatsAppButton message="Hi, I'm interested in Naadam project. Can you please provide more details?" />
 

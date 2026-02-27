@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Calendar, Building2, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -40,6 +41,15 @@ export default function Projects() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Our Projects | Ishtika Homes - Premium Apartments in Karnataka</title>
+        <meta name="description" content="Explore Ishtika Homes projects - Anahata in Whitefield, Krishna in Hosapete, Naadam, Vyasa, and more. Premium 2BHK & 3BHK Vaastu-compliant apartments across Karnataka." />
+        <link rel="canonical" href="https://www.ishtikahomes.com/projects" />
+        <meta property="og:title" content="Our Projects | Ishtika Homes" />
+        <meta property="og:description" content="Explore premium residential developments across Karnataka by Ishtika Homes. Ongoing and completed projects." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/projects" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <WhatsAppButton />
       

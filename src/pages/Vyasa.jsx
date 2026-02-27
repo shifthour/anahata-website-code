@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Building2, Trees, ArrowRight, ChevronLeft, ChevronRight, CheckCircle, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -62,6 +63,17 @@ export default function Vyasa() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Vyasa by Ishtika Homes | Premium Apartments in Bellary, Karnataka</title>
+        <meta name="description" content="Vyasa by Ishtika Homes - 80,000 sqft residential project in central Bellary, Karnataka. Vaastu-compliant luxury apartments with modern amenities and beautiful landscapes." />
+        <link rel="canonical" href="https://www.ishtikahomes.com/vyasa" />
+        <meta property="og:title" content="Vyasa by Ishtika Homes | Premium Apartments in Bellary" />
+        <meta property="og:description" content="80,000 sqft residential project in central Bellary, Karnataka. Vaastu-compliant luxury apartments with modern amenities." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/vyasa" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Vyasa by Ishtika Homes | Premium Apartments in Bellary" />
+        <meta name="twitter:description" content="80,000 sqft residential project in central Bellary, Karnataka. Vaastu-compliant luxury apartments with modern amenities." />
+      </Helmet>
       <Navbar />
       <WhatsAppButton message="Hi, I'm interested in Vyasa project. Can you please provide more details?" />
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Building2, Trees, ArrowRight, ChevronLeft, ChevronRight, CheckCircle, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -66,6 +67,17 @@ export default function Vashishta() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Vashishta by Ishtika Homes | Premium Apartments in JP Nagar, Bangalore</title>
+        <meta name="description" content="Vashishta by Ishtika Homes - Completed premium 2BHK & 3BHK apartments in JP Nagar, Bangalore. 1.25 Lakh sqft, 100% Vaastu compliant, EV charging, close to Nice Road and Gottigere Metro Station." />
+        <link rel="canonical" href="https://www.ishtikahomes.com/vashishta" />
+        <meta property="og:title" content="Vashishta by Ishtika Homes | Premium Apartments in JP Nagar, Bangalore" />
+        <meta property="og:description" content="Completed premium 2BHK & 3BHK apartments in JP Nagar, Bangalore. 1.25 Lakh sqft, 100% Vaastu compliant with modern amenities." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/vashishta" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Vashishta by Ishtika Homes | Premium Apartments in JP Nagar" />
+        <meta name="twitter:description" content="Completed premium 2BHK & 3BHK apartments in JP Nagar, Bangalore. 1.25 Lakh sqft, 100% Vaastu compliant." />
+      </Helmet>
       <Navbar />
       <WhatsAppButton message="Hi, I'm interested in Vashishta project. Can you please provide more details?" />
 

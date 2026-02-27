@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Calendar, Trees, Building2, ArrowRight, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -164,6 +165,19 @@ export default function Anahata() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Anahata by Ishtika Homes | Premium 2BHK & 3BHK Apartments in Whitefield, Bangalore</title>
+        <meta name="description" content="Anahata by Ishtika Homes - Premium 2BHK & 3BHK Vaastu-compliant apartments in Whitefield, Bangalore. 5 acres, 440 families, 5 towers, 80% open space, 50+ amenities. Starting at ₹89 Lakhs." />
+        <meta name="keywords" content="Anahata, Ishtika Homes, 2BHK apartments Whitefield, 3BHK apartments Whitefield, luxury apartments Bangalore, Vaastu compliant homes Whitefield, gated community Whitefield, Soukya Road apartments, premium apartments Bangalore" />
+        <link rel="canonical" href="https://www.ishtikahomes.com/anahata" />
+        <meta property="og:title" content="Anahata by Ishtika Homes | Premium Apartments in Whitefield, Bangalore" />
+        <meta property="og:description" content="Premium 2BHK & 3BHK Vaastu-compliant apartments in Whitefield, Bangalore. 5 acres, 440 families, 80% open space, 50+ amenities. Starting at ₹89 Lakhs." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/anahata" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.ishtikahomes.com/assets/img/aerial-view-bg.jpg" />
+        <meta name="twitter:title" content="Anahata by Ishtika Homes | Premium Apartments in Whitefield, Bangalore" />
+        <meta name="twitter:description" content="Premium 2BHK & 3BHK Vaastu-compliant apartments in Whitefield, Bangalore. 5 acres, 440 families, 80% open space, 50+ amenities." />
+      </Helmet>
       <Navbar />
       <WhatsAppButton message="Hi, I'm interested in Anahata project. Can you please provide more details?" />
 

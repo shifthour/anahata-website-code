@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Home, Building2, Trees, ArrowRight, ChevronLeft, ChevronRight, CheckCircle, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -63,6 +64,17 @@ export default function Krishna() {
 
   return (
     <div className="bg-white min-h-screen pt-24">
+      <Helmet>
+        <title>Krishna by Ishtika Homes | Premium 2BHK & 3BHK Apartments in Hosapete, Karnataka</title>
+        <meta name="description" content="Krishna by Ishtika Homes - Premium 2BHK & 3BHK apartments in Hosapete, Karnataka. 2.25 Lakh sqft, 1.25 acres, 119 luxury flats, 100% Vaastu compliant with modern amenities." />
+        <link rel="canonical" href="https://www.ishtikahomes.com/krishna" />
+        <meta property="og:title" content="Krishna by Ishtika Homes | Premium Apartments in Hosapete" />
+        <meta property="og:description" content="Premium 2BHK & 3BHK apartments in Hosapete, Karnataka. 2.25 Lakh sqft, 119 luxury flats, 100% Vaastu compliant." />
+        <meta property="og:url" content="https://www.ishtikahomes.com/krishna" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Krishna by Ishtika Homes | Premium Apartments in Hosapete" />
+        <meta name="twitter:description" content="Premium 2BHK & 3BHK apartments in Hosapete, Karnataka. 2.25 Lakh sqft, 119 luxury flats, 100% Vaastu compliant." />
+      </Helmet>
       <Navbar />
       <WhatsAppButton message="Hi, I'm interested in Krishna project. Can you please provide more details?" />
 
